@@ -8,6 +8,7 @@ from locators.alerts_frame_windows_locators import BrowserWindowsPageLocators, A
     NestedFramesPageLocators, ModalDialogsPageLocators
 from pages.base_page import BasePage
 
+
 class BrowserWindowsPage(BasePage):
     locators = BrowserWindowsPageLocators()
 
