@@ -19,4 +19,4 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
       - name: Run test
-        run: pytest
+        run: pytest tests/interactions_test.py

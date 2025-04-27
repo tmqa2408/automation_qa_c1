@@ -11,8 +11,8 @@ from selenium.webdriver.chrome.options import Options
 @pytest.fixture(scope='function')
 def driver():
     options = Options()
-    options.add_argument("--headless")  # Убери, если нужен UI
-    driver = webdriver.Chrome(ChromeDriverManager().install(),chrome_options=options)
+#    options.add_argument("--headless")  # Убери, если нужен UI
+    driver = webdriver.Chrome(ChromeDriverManager().install(),options=options)
     driver.maximize_window()
     yield driver
     attach = driver.get_screenshot_as_png()
